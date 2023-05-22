@@ -1,1 +1,6 @@
 # Sintesis-de-mecanismos
+El código en el archivo "main.cpp" está escrito en lenguaje C++. Este código permite realizar la síntesis de mecanismos de cuatro barras de forma automática. Recibe como datos de entrada las dimensiones de los cuatro eslabones y la velocidad angular de entrada en el eslabón 1. Este código asume una aceleración angular de entrada de 0, y asume el eslabón 4 como eslabón de referencia, sin movimiento. 
+Este código no solicita al usuario un ángulo de la barra 1 como entrada, puesto que está diseñado para sintetizar el mecanismo para los 360 valores distintos posibles del ángulo de la barra 1, discriminando los casos en los que no se puede completar la cadena cinemática. 
+Los resultados de cada corrida del código se almacenan en un archivo txt en el directorio actual del código, el cual es sobreescrito cada vez que el código corre.
+Los resultados que se obtienen son los ángulos de las barras 2 y 3, las posiciones de los puntos de conexión a y b del mecanismo (los que no están fijos), las velocidades lineales de dichos puntos de conexión, las velocidades angulares de los eslabones 2 y 3, las aceleraciones angulares de dichos eslabones y las aceleraciones lineales de los puntos de conexión.
+Sólo es necesario introducir los datos requeridos y el código generará el archivo con todos los resultados automáticamente.
